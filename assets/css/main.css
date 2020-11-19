@@ -1,0 +1,732 @@
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   /* Raleway Medium font */
+   @font-face{
+    src: url("../fonts/Raleway-Medium.ttf");
+    font-family: Raleway-Medium;
+}
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: Raleway-Medium!important;
+}
+body{
+  font-family: Raleway-Medium!important;
+  font-weight: 400;
+}
+*::selection{
+  background: #FD6615!important;
+  color: #fff;
+}
+a, button.link{
+  font-weight: 700;
+  font-style: normal;
+  color: #3B3B46;
+  transition: box-shadow ease-out 0.4s;
+  background-color: transparent;
+  border:none;
+}
+a:hover, button.link:hover{
+  box-shadow: inset 0 0px 0 white, inset 0 -10px 0 #FD6615;
+  color: #3B3B46;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Styling for post section */
+.post{
+font-family: Raleway-Medium;
+color: #555;
+margin-bottom: 90px!important;
+ margin: 0 65px 0 65px;
+ font-weight: 400!important;
+}
+
+blockquote {
+  border-left: 5px solid #f0f0f0;
+  margin: 20px 0 20px 19px;
+  padding-left: 20px;
+  page-break-inside: avoid;
+  font-weight: 600;  
+  letter-spacing: 1px;
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin: 7px 6px 7px 6px;
+    
+}
+input:focus{
+  color: #495057;
+  background-color: #fff;
+  outline: 0;
+  border-color:#FD6615!important;
+}
+
+textarea{
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin: 7px 6px 7px 6px;
+}
+textarea:focus{
+  color: #495057;
+  background-color: #fff;
+  outline: 0;
+  border-color:#FD6615!important;
+}
+select, select option{
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin: 7px 6px 7px 6px;
+}
+
+input[type='submit']{
+  font-size: 17px!important;
+  background-color: #FD6615;
+  color: #fff;
+  border: none;
+  text-align: center;
+  padding: 10px 19px 10px 19px;
+}
+
+/* Buttons styling start */
+
+button{
+  padding: 8px 18px;
+  background-color: #ff803b;
+  color: #fff;
+  border-radius: 6px;
+  border:2px solid #ff803b;
+  margin: 7px 6px 7px 6px;
+  transition: background-color ease-out 0.5s;
+}
+button.inverse{
+  background-color: #cccccc;
+  border: none;
+  color: #000;
+}
+
+button.default:hover{
+  background-color: transparent;
+  color: #ff803b;
+}
+
+button.default-border{
+  background-color: transparent;
+  color: #ff803b;
+}
+
+button.default-border:hover{
+  background-color: #ff803b;
+  color: #fff;
+}
+
+button.primary{
+  background-color: #43a0f4;
+  border:2px solid #43a0f4;
+}
+button.primary:hover{
+  background-color: transparent;
+  border:2px solid #43a0f4;
+  color: #43a0f4;
+}
+
+button.primary-border{
+  background-color: transparent;
+  border:2px solid #43a0f4;
+  color: #43a0f4;
+}
+
+button.primary-border:hover{
+  background-color: #43a0f4;
+  border:2px solid #43a0f4;
+  color: #fff;
+}
+
+button.success{
+  background-color: #71e671; 
+  border:2px solid #71e671;
+}
+
+button.success:hover{
+  background-color: transparent;
+  border:2px solid #71e671;
+  color: #71e671;
+}
+
+button.success-border{
+  background-color: transparent;
+  border:2px solid #71e671;
+  color: #71e671;
+}
+
+button.success-border:hover{
+  background-color: #71e671;
+  border:2px solid #71e671;
+  color: #fff;
+}
+
+button.info{
+  background-color: #3beaea; 
+  border:2px solid #3beaea;
+}
+
+button.info:hover{
+  background-color: transparent;
+  border:2px solid #3beaea;
+  color: #3beaea;
+}
+
+button.info-border{
+  background-color: transparent;
+  border:2px solid #3beaea;
+  color: #3beaea;
+}
+
+button.info-border:hover{
+  background-color: #3beaea;
+  border:2px solid #3beaea;
+  color: #fff;
+}
+
+button.warning{
+  background-color: #ffd966;
+  border:2px solid #ffd966;
+} 
+
+button.warning:hover{
+  background-color: transparent;
+  border:2px solid #ffd966;
+  color: #ffd966;
+}
+
+button.warning-border{
+  background-color: transparent;
+  border:2px solid #ffd966;
+  color: #ffd966;
+}
+
+button.warning-border:hover{
+  background-color: #ffd966;
+  border:2px solid #ffd966;
+  color: #fff;
+}
+
+button.danger{
+  background-color: #f44343; 
+  border:2px solid #f44343;
+}
+
+button.danger:hover{
+  background-color: transparent;
+  border:2px solid #f44343;
+  color: #f44343;
+}
+
+button.danger-border{
+  background-color: transparent;
+  border:2px solid #f44343;
+  color: #f44343;
+} 
+
+button.danger-border:hover{
+  background-color: #f44343;
+  border:2px solid #f44343;
+  color: #fff;
+}
+
+.disable{
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+button.x-large{
+  padding: 20px 40px;
+}
+
+button.large{
+  padding: 14px 27px;
+}
+
+button.medium{
+  padding: 6px 13px;
+}
+
+button.small{
+  padding: 3px 7px;
+}
+
+/* Button styling end */
+
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ */
+
+ img{
+  width: 100%;
+  margin: 22px 0 22px 0;
+  z-index: -999!important;
+ }
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: rgb(212, 71, 71);
+  color: #fff;
+  padding: 0.2em 0;
+}
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+    text-decoration-color: #FD6615;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  /*
+     * Printing Tables:
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* My defined styles */
+
+/* header and navbar styling */
+header{
+display: block;
+}
+.navbar{
+  background-color: #fff;
+  z-index: 999!important;
+}
+.navbar-brand{
+    color:#3B3B46 ;
+    font-weight: 900;
+    
+    font-size: x-large;
+}
+
+.navbar-brand:hover{
+    color: #3B3B46;
+}
+.navbar-brand:hover{
+box-shadow: none;
+font-weight: 900;
+}
+#navbar > div > button{
+    color: #FD6615;
+}
+.nav-link{
+    color: #FD6615;
+    font-weight: 500;
+}
+.nav-link:hover{
+    color: #FD6615;
+    text-decoration: none;
+    font-weight: 500;
+}
+.navbar-nav li a{
+  transition: box-shadow linear 0.4s;
+}
+.navbar-nav li a:hover{
+    box-shadow: inset 0 0px 0 white, inset 0 -4px 0 #FD6615;
+}
+.nav-item{
+  width: fit-content;
+}
+
+/* hero banner styling */
+.home-banner{
+    padding: 0 0 6em 0;
+    text-align: center;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+}
+.home-banner-text{
+  font-size: 7em;
+
+}
+.home-banner-text::selection{
+  background: #FD6615;
+  color: #fff;
+}
+.home-banner-text small{
+  font-size: 93px;
+}
+.home-banner .banner-button{
+  background:#FD6615;
+  text-align: center;
+  padding-top: 13px;
+  padding-right: 22px;
+  padding-bottom: 13px;
+  padding-left: 22px;
+  color: #FFF;
+  font-size: 2em;
+  border: 4px solid #FD6615;
+  border-radius: 15px;
+  transition: background ease-out 0.4s;
+}
+.home-banner .banner-button:hover{
+  border-color: #FD6615;
+  background: none;
+  color: #FD6615;
+}
+
+/* Recent post text line styling */
+.start-posts-header{
+  width: 100%;
+  border-bottom: 1px solid #3B3B46 ;
+  line-height: 0.1em;
+  margin: 40px 0 80px;
+}
+.start-posts-header span{
+  background: #fff;
+  padding: 0 10px;
+}
+
+/* singular home page post styling starts */
+.post-title{
+  font-size: 3em;
+  font-weight: 500;
+}
+.post-image img{
+  width: 100%;
+}
+.authour-image{
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+  margin: 2em 1em 2em 1em;
+  }
+  .authour-name, .post-date, .post-comments{
+    font-size: 1em;
+    margin-right: 22px;
+  }
+/* singular home page post styling starts */
+
+  footer {
+    background: #222;
+    color: #ffffff;
+    padding: 80px 0px;
+    position: relative;
+    font-size: 0.8em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-kerning: auto;
+}
+footer a{
+  color: #FFF;
+}
+footer a:hover{
+  color: #FFF;
+  font-weight: 200;
+}
+.social-icon {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+}
+.social-icon li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 22px;
+  margin-right: 22px;
+}
+footer i{
+  font-weight: 100;
+}
+.footer-clearfix{
+padding: 42px 0 42px 0;
+}
+
+/* back to top styling */
+.to-top{
+  background-color: #ffffff;
+  box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
+  transition: all 1s ease;
+  bottom: 2em;
+  right: 2em;
+  color: #333;
+  font-size: 24px;
+  display: none;
+  position: fixed;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  text-align: center;
+}
+.to-top:hover{
+  box-shadow: none;
+}
+
+/* individual post header styling */
+.single-post-header{
+  text-align: center;
+  font-size: 4em;
+  padding: 44px 0 44px 0;
+}
+
+/* individual post hero banner styling */
+.single-post-banner{
+  padding: 0 0 0 0;
+    text-align: center;
+    background-image: url('../img/bg2.jpg');
+    background-size: cover;
+}
+.single-post-banner-text, .about-banner-text{
+  font-size: 4em;
+  padding: 100px 0 100px 0;
+}
+
+/* About page banner styling */
+.about-banner{
+  padding: 0 0 0 0;
+    text-align: center;
+    background-image: url('../img/bg3.jpg');
+    background-size: cover;
+}
+
+
+/* styling for low resolution screens */
+@media (max-width: 767px) {
+
+.recent-posts-section{
+  margin: 0;
+}
+
+.banner-button{
+  max-width: 60%;
+  font-size: 17px!important;
+}
+.home-banner-text{
+  padding-top: 33px;
+}
+.home-banner-text small{
+  font-size: 27px;
+}
+
+.post-title{
+  font-size: 25px;
+  white-space: pre-line;
+}
+
+.authour-name, .post-date, .post-comments{
+  font-size: 1em;
+  width: 100%!important;
+  white-space: pre-line;
+}
+
+.post{
+  margin: 0;
+}
+
+}
